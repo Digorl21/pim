@@ -1,0 +1,107 @@
+[
+    {
+        "pergunta_1": {
+            "pergunta": "Qual \u00e9 a finalidade de uma estrutura condicional em programa\u00e7\u00e3o?",
+            "alternativas": [
+                "a) Realizar repeti\u00e7\u00e3o de a\u00e7\u00f5es",
+                "b) Escolher uma a\u00e7\u00e3o com base em uma condi\u00e7\u00e3o",
+                "c) Armazenar dados tempor\u00e1rios"
+            ],
+            "resposta_correta": "b) Escolher uma a\u00e7\u00e3o com base em uma condi\u00e7\u00e3o",
+            "resposta_usuario": "c",
+            "explicacao": "A estrutura condicional ajuda a tomar decis\u00f5es dentro do programa, escolhendo um caminho de execu\u00e7\u00e3o com base em uma condi\u00e7\u00e3o."
+        },
+        "pergunta_2": {
+            "pergunta": "O que faz um la\u00e7o de repeti\u00e7\u00e3o 'for'?",
+            "alternativas": [
+                "a) Imprime um valor uma vez",
+                "b) Executa um c\u00f3digo m\u00faltiplas vezes",
+                "c) Compara dois valores"
+            ],
+            "resposta_correta": "b) Executa um c\u00f3digo m\u00faltiplas vezes",
+            "resposta_usuario": "c",
+            "explicacao": "O la\u00e7o 'for' \u00e9 utilizado para repetir uma a\u00e7\u00e3o v\u00e1rias vezes, percorrendo uma sequ\u00eancia de valores, como uma lista ou um intervalo de n\u00fameros."
+        },
+        "pergunta_3": {
+            "pergunta": "Em l\u00f3gica de programa\u00e7\u00e3o, o que significa 'algoritmo'?",
+            "alternativas": [
+                "a) Uma sequ\u00eancia de passos para resolver um problema",
+                "b) Um tipo de linguagem de programa\u00e7\u00e3o",
+                "c) Um programa que gera gr\u00e1ficos"
+            ],
+            "resposta_correta": "a) Uma sequ\u00eancia de passos para resolver um problema",
+            "resposta_usuario": "c",
+            "explicacao": "Um algoritmo \u00e9 uma sequ\u00eancia de instru\u00e7\u00f5es que descrevem como resolver um problema ou realizar uma tarefa espec\u00edfica."
+        }
+    },
+    {
+        "pergunta_1": {
+            "pergunta": "Qual \u00e9 o objetivo da l\u00f3gica computacional?",
+            "alternativas": [
+                "a) Organizar arquivos no computador",
+                "b) Analisar e otimizar algoritmos",
+                "c) Criar sistemas gr\u00e1ficos"
+            ],
+            "resposta_correta": "b) Analisar e otimizar algoritmos",
+            "resposta_usuario": "c",
+            "explicacao": "A l\u00f3gica computacional permite que possamos desenvolver algoritmos eficientes e avaliar o desempenho deles em termos de tempo e recursos."
+        },
+        "pergunta_2": {
+            "pergunta": "O que significa a an\u00e1lise de complexidade de um algoritmo?",
+            "alternativas": [
+                "a) O tempo necess\u00e1rio para um algoritmo executar",
+                "b) O n\u00famero de linhas de c\u00f3digo do algoritmo",
+                "c) O tipo de linguagem usada no algoritmo"
+            ],
+            "resposta_correta": "a) O tempo necess\u00e1rio para um algoritmo executar",
+            "resposta_usuario": "c",
+            "explicacao": "A an\u00e1lise de complexidade nos ajuda a entender o comportamento de um algoritmo \u00e0 medida que a quantidade de dados cresce, principalmente em termos de tempo e mem\u00f3ria."
+        },
+        "pergunta_3": {
+            "pergunta": "Qual \u00e9 o principal objetivo de um algoritmo de busca?",
+            "alternativas": [
+                "a) Encontrar o n\u00famero m\u00e1ximo",
+                "b) Encontrar um item espec\u00edfico em uma lista",
+                "c) Ordenar os n\u00fameros"
+            ],
+            "resposta_correta": "b) Encontrar um item espec\u00edfico em uma lista",
+            "resposta_usuario": "c",
+            "explicacao": "Algoritmos de busca t\u00eam como objetivo localizar um elemento dentro de um conjunto de dados, como procurar por um n\u00famero em uma lista."
+        }
+    },
+    {
+        "pergunta_1": {
+            "pergunta": "O que \u00e9 uma vari\u00e1vel em programa\u00e7\u00e3o?",
+            "alternativas": [
+                "a) Um espa\u00e7o para armazenar dados",
+                "b) Um tipo de linguagem de programa\u00e7\u00e3o",
+                "c) Uma estrutura de repeti\u00e7\u00e3o"
+            ],
+            "resposta_correta": "a) Um espa\u00e7o para armazenar dados",
+            "resposta_usuario": "c",
+            "explicacao": "Uma vari\u00e1vel \u00e9 um espa\u00e7o na mem\u00f3ria usado para armazenar valores que podem ser manipulados durante a execu\u00e7\u00e3o do programa."
+        },
+        "pergunta_2": {
+            "pergunta": "O que faz a fun\u00e7\u00e3o 'print()' em Python?",
+            "alternativas": [
+                "a) Recebe dados do usu\u00e1rio",
+                "b) Exibe uma mensagem na tela",
+                "c) Cria uma vari\u00e1vel"
+            ],
+            "resposta_correta": "b) Exibe uma mensagem na tela",
+            "resposta_usuario": "c",
+            "explicacao": "A fun\u00e7\u00e3o 'print()' exibe informa\u00e7\u00f5es no console ou na tela do usu\u00e1rio, o que \u00e9 \u00fatil para mostrar o resultado ou mensagens de depura\u00e7\u00e3o."
+        },
+        "pergunta_3": {
+            "pergunta": "Qual \u00e9 a finalidade de uma fun\u00e7\u00e3o em programa\u00e7\u00e3o?",
+            "alternativas": [
+                "a) Organizar o c\u00f3digo em partes reutiliz\u00e1veis",
+                "b) Armazenar dados",
+                "c) Comparar dois valores"
+            ],
+            "resposta_correta": "a) Organizar o c\u00f3digo em partes reutiliz\u00e1veis",
+            "resposta_usuario": "c",
+            "explicacao": "Fun\u00e7\u00f5es ajudam a organizar o c\u00f3digo, dividindo-o em blocos reutiliz\u00e1veis, tornando-o mais modular e f\u00e1cil de manter."
+        }
+    }
+] 

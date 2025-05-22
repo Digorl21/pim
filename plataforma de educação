@@ -1,0 +1,200 @@
+import json
+
+
+def introducao():
+    print("Bem-vindo à plataforma de educação!")
+    print("Hoje, vamos aprender conceitos fundamentais de programação.")
+    print("Vamos começar com Lógica de Programação, Lógica Computacional e Programação Básica.\n")
+
+
+def validar_resposta(pergunta, alternativas):
+    while True:
+        resposta_usuario = input(f"Sua resposta: ").strip().lower()  # Converte resposta para minúscula
+        alternativas_lower = [alt.lower().split(')')[0] for alt in
+                              alternativas]  # Converte as alternativas para minúscula e ignora a parte após ')'
+        if resposta_usuario in alternativas_lower:
+            return resposta_usuario
+        else:
+            print("Alternativa inválida! Por favor, escolha uma alternativa existente.")
+
+
+def logica_programacao():
+    print("Unidade 1: Lógica de Programação\n")
+    print(
+        "A lógica de programação é a habilidade de resolver problemas de forma estruturada, usando um raciocínio lógico e sequencial. "
+        "Ela é a base para qualquer linguagem de programação. Com ela, você aprende a dividir um grande problema em partes menores e mais fáceis de entender.")
+    print("\nExemplo de raciocínio lógico em programação:")
+    print("1. Se o número for maior que 10, imprima 'Maior que 10'. Caso contrário, imprima 'Menor ou igual a 10'.")
+    print("Isso é uma estrutura condicional simples. Ela nos ajuda a decidir o que fazer dependendo de uma condição.")
+    print("\nOutro exemplo seria usar um laço de repetição (loop).")
+    print("Exemplo: Imprimir números de 1 a 5.")
+    print("Código: \nfor i in range(1, 6):\n    print(i)\n")
+    print("Neste exemplo, o laço 'for' repete o código 'print(i)' para cada valor de 'i', indo de 1 até 5.")
+    print("\nAgora, vamos aplicar o conhecimento com um quiz.\n")
+
+    quiz_respostas = {
+        "pergunta_1": {
+            "pergunta": "Qual é a finalidade de uma estrutura condicional em programação?",
+            "alternativas": ["a) Realizar repetição de ações", "b) Escolher uma ação com base em uma condição",
+                             "c) Armazenar dados temporários"],
+            "resposta_correta": "b) Escolher uma ação com base em uma condição",
+            "resposta_usuario": "",
+            "explicacao": "A estrutura condicional ajuda a tomar decisões dentro do programa, escolhendo um caminho de execução com base em uma condição."
+        },
+        "pergunta_2": {
+            "pergunta": "O que faz um laço de repetição 'for'?",
+            "alternativas": ["a) Imprime um valor uma vez", "b) Executa um código múltiplas vezes",
+                             "c) Compara dois valores"],
+            "resposta_correta": "b) Executa um código múltiplas vezes",
+            "resposta_usuario": "",
+            "explicacao": "O laço 'for' é utilizado para repetir uma ação várias vezes, percorrendo uma sequência de valores, como uma lista ou um intervalo de números."
+        },
+        "pergunta_3": {
+            "pergunta": "Em lógica de programação, o que significa 'algoritmo'?",
+            "alternativas": ["a) Uma sequência de passos para resolver um problema",
+                             "b) Um tipo de linguagem de programação", "c) Um programa que gera gráficos"],
+            "resposta_correta": "a) Uma sequência de passos para resolver um problema",
+            "resposta_usuario": "",
+            "explicacao": "Um algoritmo é uma sequência de instruções que descrevem como resolver um problema ou realizar uma tarefa específica."
+        }
+    }
+
+    for pergunta_key, pergunta in quiz_respostas.items():
+        print(pergunta["pergunta"])
+        for alternativa in pergunta["alternativas"]:
+            print(alternativa)
+        pergunta["resposta_usuario"] = validar_resposta(pergunta["pergunta"], pergunta["alternativas"])
+
+    return quiz_respostas
+
+
+def logica_computacional():
+    print("\nUnidade 2: Lógica Computacional\n")
+    print(
+        "Lógica Computacional é a aplicação de raciocínios lógicos no desenvolvimento de algoritmos para resolução de problemas. "
+        "Ela envolve a estruturação do pensamento de forma que o computador consiga executar as instruções de forma eficiente.")
+    print(
+        "\nUm exemplo clássico de algoritmo computacional é a busca de um número em uma lista. Vamos imaginar que temos uma lista de números e queremos encontrar se o número 7 está nela.")
+    print("Aqui está o pseudocódigo para isso:")
+    print("Algoritmo de busca linear:")
+    print("1. Para cada elemento na lista, compare com o número que procuramos.")
+    print("2. Se encontrar o número, retorne 'encontrado'. Caso contrário, continue a busca.")
+    print("\nOutro conceito importante em lógica computacional é a análise de complexidade. "
+          "Isso nos ajuda a entender quão rápido o algoritmo irá executar conforme a quantidade de dados aumenta.")
+    print("\nAgora, vamos aplicar o conhecimento com um quiz.\n")
+
+    quiz_respostas = {
+        "pergunta_1": {
+            "pergunta": "Qual é o objetivo da lógica computacional?",
+            "alternativas": ["a) Organizar arquivos no computador", "b) Analisar e otimizar algoritmos",
+                             "c) Criar sistemas gráficos"],
+            "resposta_correta": "b) Analisar e otimizar algoritmos",
+            "resposta_usuario": "",
+            "explicacao": "A lógica computacional permite que possamos desenvolver algoritmos eficientes e avaliar o desempenho deles em termos de tempo e recursos."
+        },
+        "pergunta_2": {
+            "pergunta": "O que significa a análise de complexidade de um algoritmo?",
+            "alternativas": ["a) O tempo necessário para um algoritmo executar",
+                             "b) O número de linhas de código do algoritmo",
+                             "c) O tipo de linguagem usada no algoritmo"],
+            "resposta_correta": "a) O tempo necessário para um algoritmo executar",
+            "resposta_usuario": "",
+            "explicacao": "A análise de complexidade nos ajuda a entender o comportamento de um algoritmo à medida que a quantidade de dados cresce, principalmente em termos de tempo e memória."
+        },
+        "pergunta_3": {
+            "pergunta": "Qual é o principal objetivo de um algoritmo de busca?",
+            "alternativas": ["a) Encontrar o número máximo", "b) Encontrar um item específico em uma lista",
+                             "c) Ordenar os números"],
+            "resposta_correta": "b) Encontrar um item específico em uma lista",
+            "resposta_usuario": "",
+            "explicacao": "Algoritmos de busca têm como objetivo localizar um elemento dentro de um conjunto de dados, como procurar por um número em uma lista."
+        }
+    }
+
+    for pergunta_key, pergunta in quiz_respostas.items():
+        print(pergunta["pergunta"])
+        for alternativa in pergunta["alternativas"]:
+            print(alternativa)
+        pergunta["resposta_usuario"] = validar_resposta(pergunta["pergunta"], pergunta["alternativas"])
+
+    return quiz_respostas
+
+
+def programacao_basica():
+    print("\nUnidade 3: Programação Básica\n")
+    print(
+        "Programação Básica é o início da prática de codificação. Ela envolve a utilização de uma linguagem de programação "
+        "para escrever instruções que o computador poderá entender e executar.")
+    print("\nExemplo básico: Vamos criar um programa que soma dois números.")
+    print("Código: \nnum1 = 5\nnum2 = 10\nresultado = num1 + num2\nprint(resultado)\n")
+    print("Neste exemplo, estamos criando duas variáveis (num1 e num2), somando-as e imprimindo o resultado.")
+    print(
+        "\nOutro conceito importante em programação básica é a criação de funções, que ajudam a organizar o código e torná-lo mais reutilizável.")
+    print("\nAgora, vamos aplicar o conhecimento com um quiz.\n")
+
+    quiz_respostas = {
+        "pergunta_1": {
+            "pergunta": "O que é uma variável em programação?",
+            "alternativas": ["a) Um espaço para armazenar dados", "b) Um tipo de linguagem de programação",
+                             "c) Uma estrutura de repetição"],
+            "resposta_correta": "a) Um espaço para armazenar dados",
+            "resposta_usuario": "",
+            "explicacao": "Uma variável é um espaço na memória usado para armazenar valores que podem ser manipulados durante a execução do programa."
+        },
+        "pergunta_2": {
+            "pergunta": "O que faz a função 'print()' em Python?",
+            "alternativas": ["a) Recebe dados do usuário", "b) Exibe uma mensagem na tela", "c) Cria uma variável"],
+            "resposta_correta": "b) Exibe uma mensagem na tela",
+            "resposta_usuario": "",
+            "explicacao": "A função 'print()' exibe informações no console ou na tela do usuário, o que é útil para mostrar o resultado ou mensagens de depuração."
+        },
+        "pergunta_3": {
+            "pergunta": "Qual é a finalidade de uma função em programação?",
+            "alternativas": ["a) Organizar o código em partes reutilizáveis", "b) Armazenar dados",
+                             "c) Comparar dois valores"],
+            "resposta_correta": "a) Organizar o código em partes reutilizáveis",
+            "resposta_usuario": "",
+            "explicacao": "Funções ajudam a organizar o código, dividindo-o em blocos reutilizáveis, tornando-o mais modular e fácil de manter."
+        }
+    }
+
+    for pergunta_key, pergunta in quiz_respostas.items():
+        print(pergunta["pergunta"])
+        for alternativa in pergunta["alternativas"]:
+            print(alternativa)
+        pergunta["resposta_usuario"] = validar_resposta(pergunta["pergunta"], pergunta["alternativas"])
+
+    return quiz_respostas
+
+
+def salvar_respostas(respostas):
+    with open("respostas.json", "w") as arquivo_json:
+        json.dump(respostas, arquivo_json, indent=4)
+    print("\nSuas respostas foram salvas no arquivo 'respostas.json'.")
+
+
+def main():
+    introducao()
+
+    respostas = []
+    respostas.append(logica_programacao())
+    respostas.append(logica_computacional())
+    respostas.append(programacao_basica())
+
+    # Após responder as perguntas, vamos verificar as respostas e fornecer explicações
+    print("\nVamos revisar suas respostas:")
+    for unidade in respostas:
+        for pergunta_key, pergunta in unidade.items():
+            if pergunta["resposta_usuario"] == pergunta["resposta_correta"].lower():
+                print(f"\n{pergunta['pergunta']} - Resposta correta!")
+            else:
+                print(f"\n{pergunta['pergunta']} - Resposta errada!")
+                print(f"Resposta correta: {pergunta['resposta_correta']}")
+                print(f"Explicação: {pergunta['explicacao']}")
+
+    print("\nParabéns por completar as três unidades! Continue praticando e aprendendo mais.")
+    salvar_respostas(respostas)
+
+
+if __name__ == "__main__": 
+    main() 
